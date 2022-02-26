@@ -1,0 +1,133 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="home.css">
+<title>Bridgee</title>
+</head>
+
+<body>
+	<div id="rv1">
+      <span style="color:navy">Bridgee</span>
+	  <p>This page connects the people who all are in need for education and the people who like's support them<br>This act as a bridge between them </p>
+	  <img id="image" src=".jpg">
+	</div>
+	
+	<div id="rv2">
+     <span style="color:navy">Bridgee</span>
+     <img id="image2"src=".jpg" onclick="image()">
+  </div>
+
+	<div id="is">
+     <i class="fa fa-home"onclick="home()">Home</i> 
+     <i class="fa fa-male" onclick="funders()">Funders</i>
+     <i class="fa fa-book" onclick="needy()">Edu Needy</i>
+     <i class="fa fa-phone" onclick="phone()">Contact info</i>
+   </div>
+   
+   <div id="fom1" align="center">
+   <form>
+     <label for="fname">First Name:</label>
+       <input id="fname" type="text" placeholder="firstname..."><br>
+     <label for="lname">Last Name:</label>
+       <input id="lname" type="text" placeholder="lastname.."><br>
+     <label for="Job">Job:</label>
+     	<input id="job" type="text" placeholder="..."><br>
+     <label for="num">Fund:</label>
+     	<input id="num" type="text" placeholder="00000.00.."><br>
+     <label for="email">Email:</label>
+       <input id="email" type="text" placeholder="contactus@gmail.com...."><br>
+     <label for="country">Country:</label>
+       <select id="country">
+        <option value="India">India</option>
+        <option value="Australia">Australia</option>
+        <option value="USA">USA</option>
+       </select><br>
+      <input value="submit" type="submit">
+      <input value="Reset" type="reset">
+   </form>
+  </div> 
+  
+   <div id="fom2" align="center">
+   <form>
+     <label for="fname">First Name:</label>
+       <input id="fname" type="text" placeholder="firstname..."><br>
+     <label for="lname">Last Name:</label>
+       <input id="lname" type="text" placeholder="lastname.."><br>
+     <label for="num">Age:</label>
+     	<input id="num" type="text" placeholder="Age..."><br>
+     <label for="edu">Education:</label>
+     	<input id="edu" type="text" placeholder="description on needs"><br>
+     <label for="video">Video File:</label>
+     	<input id="video" type="file" ><br>
+     <label for="email">Email:</label>
+       <input id="email" type="text" placeholder="contactus@gmail.com...."><br>
+     <label for="country">Country:</label>
+       <select id="country">
+        <option value="India">India</option>
+        <option value="Australia">Australia</option>
+        <option value="USA">USA</option>
+       </select><br>
+      <input value="submit" type="submit">
+      <input value="Reset" type="reset">
+   </form>
+  </div> 
+   
+   <div id="fom3" align="center">
+   <form>
+     <label for="fname">First Name:</label>
+       <input id="fname" type="text" placeholder="firstname..."><br>
+     <label for="lname">Last Name:</label>
+       <input id="lname" type="text" placeholder="lastname.."><br>
+     <label for="email">Email:</label>
+       <input id="email" type="text" placeholder="contactus@gmail.com...."><br>
+     <label for="country">Country:</label>
+       <select id="country">
+        <option value="India">India</option>
+        <option value="Australia">Australia</option>
+        <option value="USA">USA</option>
+       </select><br>
+      <input value="submit" type="submit">
+      <input value="Reset" type="reset">
+   </form>
+  </div>
+  </body>
+  
+  <script>
+  function home()
+  {
+  	document.getElementById("rv1").style.display="block";
+  	document.getElementById("rv2").style.display="none";
+  	document.getElementById("fom1").style.display="none";
+  	document.getElementById("fom2").style.display="none";
+  	document.getElementById("fom3").style.display="none";
+  }
+
+  function funders()
+  {
+  	document.getElementById("rv1").style.display="none";
+  	document.getElementById("rv2").style.display="block";
+  	document.getElementById("fom1").style.display="block";
+  	document.getElementById("fom2").style.display="none";
+  	document.getElementById("fom3").style.display="none";
+  }
+  function needy()
+  {
+  	document.getElementById("rv1").style.display="none";
+  	document.getElementById("rv2").style.display="block";
+  	document.getElementById("fom1").style.display="none";
+  	document.getElementById("fom2").style.display="block";
+  	document.getElementById("fom3").style.display="none";
+  }
+  function phone()
+  {
+  	document.getElementById("rv1").style.display="none";
+  	document.getElementById("rv2").style.display="block";
+  	document.getElementById("fom1").style.display="none";
+  	document.getElementById("fom2").style.display="none";
+  	document.getElementById("fom3").style.display="block";
+  }
+
+  </script>
+
+</html>
